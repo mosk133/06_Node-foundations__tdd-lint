@@ -12,7 +12,7 @@
  */
 export const getTotalWordsFromString = (sentence) => {
     if (typeof sentence !== 'string'){
-        throw new TypeError (`expected string but received ${typeof sentence}`);
+        throw new TypeError(`expected string but received ${typeof sentence}`);
     }
 
     return sentence.split(" ").length;

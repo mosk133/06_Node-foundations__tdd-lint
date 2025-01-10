@@ -14,7 +14,7 @@
  */
 export const getDistanceMessageFromSumTo100 = (value) => {
     if (typeof value !== 'number'){
-        throw new TypeError (`expected number but received ${typeof value}`);
+        throw new TypeError(`expected number but received ${typeof value}`);
     }
 
     const sumValue = Math.round(Math.random() * 100) + value;

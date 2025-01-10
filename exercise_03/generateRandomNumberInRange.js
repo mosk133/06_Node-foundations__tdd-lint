@@ -12,8 +12,8 @@
  */
 export const generateRandomNumberInRange = (limitNumber) => {
     if (typeof limitNumber !== 'number' || limitNumber <0){
-        throw new TypeError (`expected number but received ${typeof limitNumber}`)
+        throw new TypeError(`expected number but received ${typeof limitNumber}`)
     }
 
-    return Math.round (Math.random() * limitNumber);
+    return Math.floor(Math.random() * limitNumber) + 1;
 }
