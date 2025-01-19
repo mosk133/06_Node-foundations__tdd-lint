@@ -6,3 +6,25 @@
  * output: string
  * validate input: throw TypeError with message "expected number but received <type-of-argument>" if input is not a number
  */
+
+/**
+ * Computes the sum of the input value and a random number.
+ * @param {number} value - The input number to sum with the random number.
+ * @returns string - Message indicating whether the sum exceeds or is left to reach 100.
+ */
+export const getDistanceMessageFromSumTo100 = (value) => {
+    if (typeof value !== 'number'){
+        throw new TypeError(`expected number but received ${typeof value}`);
+    }
+
+    const sumValue = Math.round(Math.random() * 100) + value;
+    
+    if (sumValue > 100){
+        const exceeds = sumValue - 100;
+        return "Sum with value " +sumValue+ " exceeds in " +exceeds+ " from number 100";
+    }
+
+    const leftOver = 100 - sumValue;
+    
+    return "Sum with value " +sumValue+ " is left in " +leftOver+ " from number 100";
+};
