@@ -16,10 +16,12 @@ export const isAdditionGreaterThanFifty = (summand1, summand2) => {
     if (typeof summand1 !== 'number'){
         throw new TypeError(`expected number but received ${typeof summand1}`)
     }
+
     if (typeof summand2 !== 'number'){
         throw new TypeError(`expected number but received ${typeof summand2}`)
     }
 
     const threshold = 50;
+    
     return summand1 + summand2 >= threshold;
 };

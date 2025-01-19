@@ -20,5 +20,6 @@ export const formatStringByWordsLength = (sentence) => {
     if (sentence.split(" ").length > 5){
         return sentence.toUpperCase();
     }
+    
     return sentence.toLowerCase();
 };

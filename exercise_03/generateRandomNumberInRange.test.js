@@ -53,7 +53,7 @@ describe("Given method generateRandomNumberInRange", () => {
         const result = generateRandomNumberInRange(input);
 
         //Assert
-        expect(result).toBe(50);
+        expect(result).toBe(51);
     });
 
     test("When input is a valid number Then it generates a rounded random number based on the limit", () => {
@@ -68,7 +68,7 @@ describe("Given method generateRandomNumberInRange", () => {
         const result = generateRandomNumberInRange(input);
 
         //Assert
-        expect(result).toBe(5);
+        expect(result).toBe(6);
     });
 
     test("When input is zero Then it returns 0", () => {

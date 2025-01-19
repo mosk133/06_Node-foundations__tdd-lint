@@ -16,6 +16,7 @@ export const isGreaterThan = (value, threshold) => {
     if (typeof value !== 'number') {
         throw new TypeError(`expected number but received ${typeof value}`);
     }
+    
     if (typeof threshold !== 'number') {
         throw new TypeError(`expected number but received ${typeof threshold}`);
     }

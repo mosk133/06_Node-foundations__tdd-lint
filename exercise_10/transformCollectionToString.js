@@ -20,5 +20,6 @@ export const transformCollectionToString = (collection) => {
     if (collection.length > 0) {
         return collection.join(' | ');
     }
+    
     return "";
 };

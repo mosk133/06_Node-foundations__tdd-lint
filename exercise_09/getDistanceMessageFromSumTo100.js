@@ -23,6 +23,8 @@ export const getDistanceMessageFromSumTo100 = (value) => {
         const exceeds = sumValue - 100;
         return "Sum with value " +sumValue+ " exceeds in " +exceeds+ " from number 100";
     }
+
     const leftOver = 100 - sumValue;
+    
     return "Sum with value " +sumValue+ " is left in " +leftOver+ " from number 100";
 };
